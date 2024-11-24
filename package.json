@@ -1,0 +1,17 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "A simple music app using Node.js, Express, and a frontend audio player",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7"
+  },
+  "author": "Vansh Arora",
+  "license": "ISC"
+}

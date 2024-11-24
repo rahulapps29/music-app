@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-mode">
+    <header>
+      <h1>My Music Player</h1>
+      <button id="themeToggle" class="theme-button"></button>
+    </header>
+    <main>
+      <!-- Create Subdirectory -->
+      <section id="directorySection">
+        <h2>Create New Folder</h2>
+        <form id="directoryForm">
+          <input
+            type="text"
+            id="newFolderName"
+            placeholder="Enter folder name"
+          />
+          <button type="submit">Create</button>
+        </form>
+      </section>
+
+      <!-- Upload Section -->
+      <section id="uploadSection">
+        <h2>Upload Songs</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <select id="folderSelect">
+            <option value="/">Root</option>
+          </select>
+          <input
+            type="file"
+            id="songUpload"
+            name="songs"
+            multiple
+            accept=".mp3"
+          />
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+      <!-- Audio Player -->
+      <section id="audioSection">
+        <audio id="audioPlayer" controls></audio>
+      </section>
+      <!-- Song List Section -->
+      <section id="songListSection">
+        <h2>Your Playlist</h2>
+        <div id="directoryTree"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - Made with ❤️ for music lovers.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
